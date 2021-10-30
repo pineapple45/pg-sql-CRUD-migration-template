@@ -1,0 +1,28 @@
+
+### FETCH ALL
+http://localhost:3005/users
+
+### FETCH BY ID
+http://localhost:3005/users/1
+
+### POSTS
+POST http://localhost:3005/users HTTP/1.1
+Content-type: application/json
+
+{
+     "username":"sam123",
+     "bio": "i am sam"
+}
+
+
+### UPDATE
+PUT http://localhost:3005/users/3 HTTP/1.1
+Content-type: application/json
+
+{
+     "username":"cindy34",
+     "bio": "i am cindy"
+}
+
+### DELETE BY ID
+DELETE http://localhost:3005/users/4 HTTP/1.1
